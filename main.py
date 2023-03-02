@@ -9,8 +9,9 @@ def index():
     cwd = os.getcwd()
     r=[]
     files = os.listdir(cwd)
+    h=str(files)
     
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"+h})
 
 
 if __name__ == '__main__':
